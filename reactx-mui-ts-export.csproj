@@ -1,0 +1,669 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF7A4603-8230-43D0-A39B-94F6F255D111}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>reactx_mui_ts_export</RootNamespace>
+    <AssemblyName>reactx-mui-ts-export</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="generate.cmd" />
+    <Content Include="material-ui\svg-icons\README.md" />
+    <Content Include="git-clone.cmd" />
+    <None Include="packages.config" />
+    <Content Include="tsconfig.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dts-generator.js" />
+    <Content Include="material-ui\AppBar\AppBar.js" />
+    <Content Include="material-ui\AppBar\AppBar.spec.js" />
+    <Content Include="material-ui\AppBar\index.js" />
+    <Content Include="material-ui\Avatar\Avatar.js" />
+    <Content Include="material-ui\Avatar\Avatar.spec.js" />
+    <Content Include="material-ui\Avatar\index.js" />
+    <Content Include="material-ui\Badge\Badge.js" />
+    <Content Include="material-ui\Badge\Badge.spec.js" />
+    <Content Include="material-ui\Badge\index.js" />
+    <Content Include="material-ui\BottomNavigation\BottomNavigation.js" />
+    <Content Include="material-ui\BottomNavigation\BottomNavigation.spec.js" />
+    <Content Include="material-ui\BottomNavigation\BottomNavigationButton.js" />
+    <Content Include="material-ui\BottomNavigation\BottomNavigationButton.spec.js" />
+    <Content Include="material-ui\BottomNavigation\index.js" />
+    <Content Include="material-ui\ButtonBase\ButtonBase.js" />
+    <Content Include="material-ui\ButtonBase\ButtonBase.spec.js" />
+    <Content Include="material-ui\ButtonBase\createRippleHandler.js" />
+    <Content Include="material-ui\ButtonBase\index.js" />
+    <Content Include="material-ui\ButtonBase\Ripple.js" />
+    <Content Include="material-ui\ButtonBase\Ripple.spec.js" />
+    <Content Include="material-ui\ButtonBase\TouchRipple.js" />
+    <Content Include="material-ui\ButtonBase\TouchRipple.spec.js" />
+    <Content Include="material-ui\Button\Button.js" />
+    <Content Include="material-ui\Button\Button.spec.js" />
+    <Content Include="material-ui\Button\index.js" />
+    <Content Include="material-ui\Card\Card.js" />
+    <Content Include="material-ui\Card\Card.spec.js" />
+    <Content Include="material-ui\Card\CardActions.js" />
+    <Content Include="material-ui\Card\CardActions.spec.js" />
+    <Content Include="material-ui\Card\CardContent.js" />
+    <Content Include="material-ui\Card\CardContent.spec.js" />
+    <Content Include="material-ui\Card\CardHeader.js" />
+    <Content Include="material-ui\Card\CardHeader.spec.js" />
+    <Content Include="material-ui\Card\CardMedia.js" />
+    <Content Include="material-ui\Card\CardMedia.spec.js" />
+    <Content Include="material-ui\Card\index.js" />
+    <Content Include="material-ui\Checkbox\Checkbox.js" />
+    <Content Include="material-ui\Checkbox\Checkbox.spec.js" />
+    <Content Include="material-ui\Checkbox\index.js" />
+    <Content Include="material-ui\Chip\Chip.js" />
+    <Content Include="material-ui\Chip\Chip.spec.js" />
+    <Content Include="material-ui\Chip\index.js" />
+    <Content Include="material-ui\colors\amber.js" />
+    <Content Include="material-ui\colors\blue.js" />
+    <Content Include="material-ui\colors\blueGrey.js" />
+    <Content Include="material-ui\colors\brown.js" />
+    <Content Include="material-ui\colors\common.js" />
+    <Content Include="material-ui\colors\cyan.js" />
+    <Content Include="material-ui\colors\deepOrange.js" />
+    <Content Include="material-ui\colors\deepPurple.js" />
+    <Content Include="material-ui\colors\green.js" />
+    <Content Include="material-ui\colors\grey.js" />
+    <Content Include="material-ui\colors\index.js" />
+    <Content Include="material-ui\colors\indigo.js" />
+    <Content Include="material-ui\colors\lightBlue.js" />
+    <Content Include="material-ui\colors\lightGreen.js" />
+    <Content Include="material-ui\colors\lime.js" />
+    <Content Include="material-ui\colors\orange.js" />
+    <Content Include="material-ui\colors\pink.js" />
+    <Content Include="material-ui\colors\purple.js" />
+    <Content Include="material-ui\colors\red.js" />
+    <Content Include="material-ui\colors\teal.js" />
+    <Content Include="material-ui\colors\yellow.js" />
+    <Content Include="material-ui\Dialog\Dialog.js" />
+    <Content Include="material-ui\Dialog\Dialog.spec.js" />
+    <Content Include="material-ui\Dialog\DialogActions.js" />
+    <Content Include="material-ui\Dialog\DialogActions.spec.js" />
+    <Content Include="material-ui\Dialog\DialogContent.js" />
+    <Content Include="material-ui\Dialog\DialogContent.spec.js" />
+    <Content Include="material-ui\Dialog\DialogContentText.js" />
+    <Content Include="material-ui\Dialog\DialogContentText.spec.js" />
+    <Content Include="material-ui\Dialog\DialogTitle.js" />
+    <Content Include="material-ui\Dialog\DialogTitle.spec.js" />
+    <Content Include="material-ui\Dialog\index.js" />
+    <Content Include="material-ui\Dialog\withMobileDialog.js" />
+    <Content Include="material-ui\Dialog\withMobileDialog.spec.js" />
+    <Content Include="material-ui\Divider\Divider.js" />
+    <Content Include="material-ui\Divider\Divider.spec.js" />
+    <Content Include="material-ui\Divider\index.js" />
+    <Content Include="material-ui\Drawer\Drawer.js" />
+    <Content Include="material-ui\Drawer\Drawer.spec.js" />
+    <Content Include="material-ui\Drawer\index.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanel.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanel.spec.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanelActions.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanelActions.spec.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanelDetails.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanelDetails.spec.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanelSummary.js" />
+    <Content Include="material-ui\ExpansionPanel\ExpansionPanelSummary.spec.js" />
+    <Content Include="material-ui\ExpansionPanel\index.js" />
+    <Content Include="material-ui\Form\FormControl.js" />
+    <Content Include="material-ui\Form\FormControl.spec.js" />
+    <Content Include="material-ui\Form\FormControlLabel.js" />
+    <Content Include="material-ui\Form\FormControlLabel.spec.js" />
+    <Content Include="material-ui\Form\FormGroup.js" />
+    <Content Include="material-ui\Form\FormGroup.spec.js" />
+    <Content Include="material-ui\Form\FormHelperText.js" />
+    <Content Include="material-ui\Form\FormHelperText.spec.js" />
+    <Content Include="material-ui\Form\FormLabel.js" />
+    <Content Include="material-ui\Form\FormLabel.spec.js" />
+    <Content Include="material-ui\Form\index.js" />
+    <Content Include="material-ui\GridList\GridList.js" />
+    <Content Include="material-ui\GridList\GridList.spec.js" />
+    <Content Include="material-ui\GridList\GridListTile.js" />
+    <Content Include="material-ui\GridList\GridListTile.spec.js" />
+    <Content Include="material-ui\GridList\GridListTileBar.js" />
+    <Content Include="material-ui\GridList\GridListTileBar.spec.js" />
+    <Content Include="material-ui\GridList\index.js" />
+    <Content Include="material-ui\Grid\Grid.js" />
+    <Content Include="material-ui\Grid\Grid.spec.js" />
+    <Content Include="material-ui\Grid\index.js" />
+    <Content Include="material-ui\Hidden\Hidden.js" />
+    <Content Include="material-ui\Hidden\Hidden.spec.js" />
+    <Content Include="material-ui\Hidden\HiddenCss.js" />
+    <Content Include="material-ui\Hidden\HiddenCss.spec.js" />
+    <Content Include="material-ui\Hidden\HiddenJs.js" />
+    <Content Include="material-ui\Hidden\HiddenJs.spec.js" />
+    <Content Include="material-ui\Hidden\index.js" />
+    <Content Include="material-ui\Hidden\types.js" />
+    <Content Include="material-ui\IconButton\IconButton.js" />
+    <Content Include="material-ui\IconButton\IconButton.spec.js" />
+    <Content Include="material-ui\IconButton\index.js" />
+    <Content Include="material-ui\Icon\Icon.js" />
+    <Content Include="material-ui\Icon\Icon.spec.js" />
+    <Content Include="material-ui\Icon\index.js" />
+    <Content Include="material-ui\Input\index.js" />
+    <Content Include="material-ui\Input\Input.js" />
+    <Content Include="material-ui\Input\Input.spec.js" />
+    <Content Include="material-ui\Input\InputAdornment.js" />
+    <Content Include="material-ui\Input\InputAdornment.spec.js" />
+    <Content Include="material-ui\Input\InputLabel.js" />
+    <Content Include="material-ui\Input\InputLabel.spec.js" />
+    <Content Include="material-ui\Input\Textarea.js" />
+    <Content Include="material-ui\Input\Textarea.spec.js" />
+    <Content Include="material-ui\internal\dom.js" />
+    <Content Include="material-ui\internal\Portal.js" />
+    <Content Include="material-ui\internal\Portal.spec.js" />
+    <Content Include="material-ui\internal\SwitchBase.js" />
+    <Content Include="material-ui\internal\SwitchBase.spec.js" />
+    <Content Include="material-ui\internal\transition.js" />
+    <Content Include="material-ui\List\index.js" />
+    <Content Include="material-ui\List\List.js" />
+    <Content Include="material-ui\List\List.spec.js" />
+    <Content Include="material-ui\List\ListItem.js" />
+    <Content Include="material-ui\List\ListItem.spec.js" />
+    <Content Include="material-ui\List\ListItemAvatar.js" />
+    <Content Include="material-ui\List\ListItemAvatar.spec.js" />
+    <Content Include="material-ui\List\ListItemIcon.js" />
+    <Content Include="material-ui\List\ListItemIcon.spec.js" />
+    <Content Include="material-ui\List\ListItemSecondaryAction.js" />
+    <Content Include="material-ui\List\ListItemSecondaryAction.spec.js" />
+    <Content Include="material-ui\List\ListItemText.js" />
+    <Content Include="material-ui\List\ListItemText.spec.js" />
+    <Content Include="material-ui\List\ListSubheader.js" />
+    <Content Include="material-ui\List\ListSubheader.spec.js" />
+    <Content Include="material-ui\Menu\index.js" />
+    <Content Include="material-ui\Menu\Menu.js" />
+    <Content Include="material-ui\Menu\Menu.spec.js" />
+    <Content Include="material-ui\Menu\MenuItem.js" />
+    <Content Include="material-ui\Menu\MenuItem.spec.js" />
+    <Content Include="material-ui\Menu\MenuList.js" />
+    <Content Include="material-ui\Menu\MenuList.spec.js" />
+    <Content Include="material-ui\MobileStepper\index.js" />
+    <Content Include="material-ui\MobileStepper\MobileStepper.js" />
+    <Content Include="material-ui\MobileStepper\MobileStepper.spec.js" />
+    <Content Include="material-ui\Modal\Backdrop.js" />
+    <Content Include="material-ui\Modal\Backdrop.spec.js" />
+    <Content Include="material-ui\Modal\index.js" />
+    <Content Include="material-ui\Modal\Modal.js" />
+    <Content Include="material-ui\Modal\Modal.spec.js" />
+    <Content Include="material-ui\Modal\modalManager.js" />
+    <Content Include="material-ui\Modal\modalManager.spec.js" />
+    <Content Include="material-ui\Paper\index.js" />
+    <Content Include="material-ui\Paper\Paper.js" />
+    <Content Include="material-ui\Paper\Paper.spec.js" />
+    <Content Include="material-ui\Popover\index.js" />
+    <Content Include="material-ui\Popover\Popover.js" />
+    <Content Include="material-ui\Popover\Popover.spec.js" />
+    <Content Include="material-ui\Progress\CircularProgress.js" />
+    <Content Include="material-ui\Progress\CircularProgress.spec.js" />
+    <Content Include="material-ui\Progress\index.js" />
+    <Content Include="material-ui\Progress\LinearProgress.js" />
+    <Content Include="material-ui\Progress\LinearProgress.spec.js" />
+    <Content Include="material-ui\Radio\index.js" />
+    <Content Include="material-ui\Radio\Radio.js" />
+    <Content Include="material-ui\Radio\Radio.spec.js" />
+    <Content Include="material-ui\Radio\RadioGroup.js" />
+    <Content Include="material-ui\Radio\RadioGroup.spec.js" />
+    <Content Include="material-ui\Select\index.js" />
+    <Content Include="material-ui\Select\Select.js" />
+    <Content Include="material-ui\Select\Select.spec.js" />
+    <Content Include="material-ui\Select\SelectInput.js" />
+    <Content Include="material-ui\Select\SelectInput.spec.js" />
+    <Content Include="material-ui\Snackbar\index.js" />
+    <Content Include="material-ui\Snackbar\Snackbar.js" />
+    <Content Include="material-ui\Snackbar\Snackbar.spec.js" />
+    <Content Include="material-ui\Snackbar\SnackbarContent.js" />
+    <Content Include="material-ui\Snackbar\SnackbarContent.spec.js" />
+    <Content Include="material-ui\Stepper\index.js" />
+    <Content Include="material-ui\Stepper\Step.js" />
+    <Content Include="material-ui\Stepper\Step.spec.js" />
+    <Content Include="material-ui\Stepper\StepButton.js" />
+    <Content Include="material-ui\Stepper\StepButton.spec.js" />
+    <Content Include="material-ui\Stepper\StepConnector.js" />
+    <Content Include="material-ui\Stepper\StepConnector.spec.js" />
+    <Content Include="material-ui\Stepper\StepContent.js" />
+    <Content Include="material-ui\Stepper\StepContent.spec.js" />
+    <Content Include="material-ui\Stepper\StepIcon.js" />
+    <Content Include="material-ui\Stepper\StepIcon.spec.js" />
+    <Content Include="material-ui\Stepper\StepLabel.js" />
+    <Content Include="material-ui\Stepper\StepLabel.spec.js" />
+    <Content Include="material-ui\Stepper\Stepper.js" />
+    <Content Include="material-ui\Stepper\Stepper.spec.js" />
+    <Content Include="material-ui\Stepper\StepPositionIcon.js" />
+    <Content Include="material-ui\Stepper\StepPositionIcon.spec.js" />
+    <Content Include="material-ui\styles\colorManipulator.js" />
+    <Content Include="material-ui\styles\colorManipulator.spec.js" />
+    <Content Include="material-ui\styles\createBreakpoints.js" />
+    <Content Include="material-ui\styles\createBreakpoints.spec.js" />
+    <Content Include="material-ui\styles\createGenerateClassName.js" />
+    <Content Include="material-ui\styles\createGenerateClassName.spec.js" />
+    <Content Include="material-ui\styles\createMixins.js" />
+    <Content Include="material-ui\styles\createMuiTheme.js" />
+    <Content Include="material-ui\styles\createMuiTheme.spec.js" />
+    <Content Include="material-ui\styles\createPalette.js" />
+    <Content Include="material-ui\styles\createPalette.spec.js" />
+    <Content Include="material-ui\styles\createTypography.js" />
+    <Content Include="material-ui\styles\createTypography.spec.js" />
+    <Content Include="material-ui\styles\getStylesCreator.js" />
+    <Content Include="material-ui\styles\getStylesCreator.spec.js" />
+    <Content Include="material-ui\styles\index.js" />
+    <Content Include="material-ui\styles\MuiThemeProvider.js" />
+    <Content Include="material-ui\styles\MuiThemeProvider.spec.js" />
+    <Content Include="material-ui\styles\shadows.js" />
+    <Content Include="material-ui\styles\spacing.js" />
+    <Content Include="material-ui\styles\themeListener.js" />
+    <Content Include="material-ui\styles\themeListener.spec.js" />
+    <Content Include="material-ui\styles\transitions.js" />
+    <Content Include="material-ui\styles\transitions.spec.js" />
+    <Content Include="material-ui\styles\withStyles.js" />
+    <Content Include="material-ui\styles\withStyles.spec.js" />
+    <Content Include="material-ui\styles\withTheme.js" />
+    <Content Include="material-ui\styles\withTheme.spec.js" />
+    <Content Include="material-ui\styles\zIndex.js" />
+    <Content Include="material-ui\svg-icons\.eslintrc.js" />
+    <Content Include="material-ui\svg-icons\ArrowDownward.js" />
+    <Content Include="material-ui\svg-icons\ArrowDropDown.js" />
+    <Content Include="material-ui\svg-icons\Cancel.js" />
+    <Content Include="material-ui\svg-icons\CheckBox.js" />
+    <Content Include="material-ui\svg-icons\CheckBoxOutlineBlank.js" />
+    <Content Include="material-ui\svg-icons\CheckCircle.js" />
+    <Content Include="material-ui\svg-icons\IndeterminateCheckBox.js" />
+    <Content Include="material-ui\svg-icons\index.spec.js" />
+    <Content Include="material-ui\svg-icons\KeyboardArrowLeft.js" />
+    <Content Include="material-ui\svg-icons\KeyboardArrowRight.js" />
+    <Content Include="material-ui\svg-icons\RadioButtonChecked.js" />
+    <Content Include="material-ui\svg-icons\RadioButtonUnchecked.js" />
+    <Content Include="material-ui\SvgIcon\index.js" />
+    <Content Include="material-ui\SvgIcon\SvgIcon.js" />
+    <Content Include="material-ui\SvgIcon\SvgIcon.spec.js" />
+    <Content Include="material-ui\Switch\index.js" />
+    <Content Include="material-ui\Switch\Switch.js" />
+    <Content Include="material-ui\Switch\Switch.spec.js" />
+    <Content Include="material-ui\Table\index.js" />
+    <Content Include="material-ui\Table\Table.js" />
+    <Content Include="material-ui\Table\Table.spec.js" />
+    <Content Include="material-ui\Table\TableBody.js" />
+    <Content Include="material-ui\Table\TableBody.spec.js" />
+    <Content Include="material-ui\Table\TableCell.js" />
+    <Content Include="material-ui\Table\TableCell.spec.js" />
+    <Content Include="material-ui\Table\TableFooter.js" />
+    <Content Include="material-ui\Table\TableFooter.spec.js" />
+    <Content Include="material-ui\Table\TableHead.js" />
+    <Content Include="material-ui\Table\TableHead.spec.js" />
+    <Content Include="material-ui\Table\TablePagination.js" />
+    <Content Include="material-ui\Table\TablePagination.spec.js" />
+    <Content Include="material-ui\Table\TableRow.js" />
+    <Content Include="material-ui\Table\TableRow.spec.js" />
+    <Content Include="material-ui\Table\TableSortLabel.js" />
+    <Content Include="material-ui\Table\TableSortLabel.spec.js" />
+    <Content Include="material-ui\Tabs\index.js" />
+    <Content Include="material-ui\Tabs\Tab.js" />
+    <Content Include="material-ui\Tabs\Tab.spec.js" />
+    <Content Include="material-ui\Tabs\TabIndicator.js" />
+    <Content Include="material-ui\Tabs\TabIndicator.spec.js" />
+    <Content Include="material-ui\Tabs\Tabs.js" />
+    <Content Include="material-ui\Tabs\Tabs.spec.js" />
+    <Content Include="material-ui\Tabs\TabScrollButton.js" />
+    <Content Include="material-ui\Tabs\TabScrollButton.spec.js" />
+    <Content Include="material-ui\test-utils\createMount.js" />
+    <Content Include="material-ui\test-utils\createRender.js" />
+    <Content Include="material-ui\test-utils\createShallow.js" />
+    <Content Include="material-ui\test-utils\getClasses.js" />
+    <Content Include="material-ui\test-utils\index.js" />
+    <Content Include="material-ui\test-utils\until.js" />
+    <Content Include="material-ui\test-utils\until.spec.js" />
+    <Content Include="material-ui\test-utils\unwrap.js" />
+    <Content Include="material-ui\TextField\index.js" />
+    <Content Include="material-ui\TextField\TextField.js" />
+    <Content Include="material-ui\TextField\TextField.spec.js" />
+    <Content Include="material-ui\Toolbar\index.js" />
+    <Content Include="material-ui\Toolbar\Toolbar.js" />
+    <Content Include="material-ui\Toolbar\Toolbar.spec.js" />
+    <Content Include="material-ui\Tooltip\index.js" />
+    <Content Include="material-ui\Tooltip\Tooltip.js" />
+    <Content Include="material-ui\Tooltip\Tooltip.spec.js" />
+    <Content Include="material-ui\transitions\Collapse.js" />
+    <Content Include="material-ui\transitions\Collapse.spec.js" />
+    <Content Include="material-ui\transitions\Fade.js" />
+    <Content Include="material-ui\transitions\Fade.spec.js" />
+    <Content Include="material-ui\transitions\Grow.js" />
+    <Content Include="material-ui\transitions\Grow.spec.js" />
+    <Content Include="material-ui\transitions\index.js" />
+    <Content Include="material-ui\transitions\Slide.js" />
+    <Content Include="material-ui\transitions\Slide.spec.js" />
+    <Content Include="material-ui\Typography\index.js" />
+    <Content Include="material-ui\Typography\Typography.js" />
+    <Content Include="material-ui\Typography\Typography.spec.js" />
+    <Content Include="material-ui\utils\addEventListener.js" />
+    <Content Include="material-ui\utils\ClickAwayListener.js" />
+    <Content Include="material-ui\utils\ClickAwayListener.spec.js" />
+    <Content Include="material-ui\utils\exactProp.js" />
+    <Content Include="material-ui\utils\exactProp.spec.js" />
+    <Content Include="material-ui\utils\helpers.js" />
+    <Content Include="material-ui\utils\helpers.spec.js" />
+    <Content Include="material-ui\utils\keyboardFocus.js" />
+    <Content Include="material-ui\utils\manageAriaHidden.js" />
+    <Content Include="material-ui\utils\reactHelpers.js" />
+    <Content Include="material-ui\utils\reactHelpers.spec.js" />
+    <Content Include="material-ui\utils\requirePropFactory.js" />
+    <Content Include="material-ui\utils\requirePropFactory.spec.js" />
+    <Content Include="material-ui\utils\withWidth.js" />
+    <Content Include="material-ui\utils\withWidth.spec.js" />
+    <Content Include="node_modules%24dts-generator%24index.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="DeepPartial.d.ts" />
+    <TypeScriptCompile Include="material-ui\AppBar\AppBar.d.ts" />
+    <TypeScriptCompile Include="material-ui\AppBar\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Avatar\Avatar.d.ts" />
+    <TypeScriptCompile Include="material-ui\Avatar\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Badge\Badge.d.ts" />
+    <TypeScriptCompile Include="material-ui\Badge\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\BottomNavigation\BottomNavigation.d.ts" />
+    <TypeScriptCompile Include="material-ui\BottomNavigation\BottomNavigationButton.d.ts" />
+    <TypeScriptCompile Include="material-ui\BottomNavigation\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\ButtonBase\ButtonBase.d.ts" />
+    <TypeScriptCompile Include="material-ui\ButtonBase\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Button\Button.d.ts" />
+    <TypeScriptCompile Include="material-ui\Button\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Card\Card.d.ts" />
+    <TypeScriptCompile Include="material-ui\Card\CardActions.d.ts" />
+    <TypeScriptCompile Include="material-ui\Card\CardContent.d.ts" />
+    <TypeScriptCompile Include="material-ui\Card\CardHeader.d.ts" />
+    <TypeScriptCompile Include="material-ui\Card\CardMedia.d.ts" />
+    <TypeScriptCompile Include="material-ui\Card\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Checkbox\Checkbox.d.ts" />
+    <TypeScriptCompile Include="material-ui\Checkbox\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Chip\Chip.d.ts" />
+    <TypeScriptCompile Include="material-ui\Chip\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\amber.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\blue.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\blueGrey.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\brown.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\common.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\cyan.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\deepOrange.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\deepPurple.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\green.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\grey.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\indigo.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\lightBlue.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\lightGreen.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\lime.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\orange.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\pink.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\purple.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\red.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\teal.d.ts" />
+    <TypeScriptCompile Include="material-ui\colors\yellow.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\Dialog.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\DialogActions.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\DialogContent.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\DialogContentText.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\DialogTitle.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Dialog\withMobileDialog.d.ts" />
+    <TypeScriptCompile Include="material-ui\Divider\Divider.d.ts" />
+    <TypeScriptCompile Include="material-ui\Divider\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Drawer\Drawer.d.ts" />
+    <TypeScriptCompile Include="material-ui\Drawer\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\ExpansionPanel\ExpansionPanel.d.ts" />
+    <TypeScriptCompile Include="material-ui\ExpansionPanel\ExpansionPanelActions.d.ts" />
+    <TypeScriptCompile Include="material-ui\ExpansionPanel\ExpansionPanelDetails.d.ts" />
+    <TypeScriptCompile Include="material-ui\ExpansionPanel\ExpansionPanelSummary.d.ts" />
+    <TypeScriptCompile Include="material-ui\ExpansionPanel\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Form\FormControl.d.ts" />
+    <TypeScriptCompile Include="material-ui\Form\FormControlLabel.d.ts" />
+    <TypeScriptCompile Include="material-ui\Form\FormGroup.d.ts" />
+    <TypeScriptCompile Include="material-ui\Form\FormHelperText.d.ts" />
+    <TypeScriptCompile Include="material-ui\Form\FormLabel.d.ts" />
+    <TypeScriptCompile Include="material-ui\Form\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\GridList\GridList.d.ts" />
+    <TypeScriptCompile Include="material-ui\GridList\GridListTile.d.ts" />
+    <TypeScriptCompile Include="material-ui\GridList\GridListTileBar.d.ts" />
+    <TypeScriptCompile Include="material-ui\GridList\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Grid\Grid.d.ts" />
+    <TypeScriptCompile Include="material-ui\Grid\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Hidden\Hidden.d.ts" />
+    <TypeScriptCompile Include="material-ui\Hidden\HiddenJs.d.ts" />
+    <TypeScriptCompile Include="material-ui\Hidden\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\IconButton\IconButton.d.ts" />
+    <TypeScriptCompile Include="material-ui\IconButton\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Icon\Icon.d.ts" />
+    <TypeScriptCompile Include="material-ui\Icon\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Input\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Input\Input.d.ts" />
+    <TypeScriptCompile Include="material-ui\Input\InputAdornment.d.ts" />
+    <TypeScriptCompile Include="material-ui\Input\InputLabel.d.ts" />
+    <TypeScriptCompile Include="material-ui\Input\Textarea.d.ts" />
+    <TypeScriptCompile Include="material-ui\internal\Portal.d.ts" />
+    <TypeScriptCompile Include="material-ui\internal\SwitchBase.d.ts" />
+    <TypeScriptCompile Include="material-ui\internal\transition.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\List.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\ListItem.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\ListItemAvatar.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\ListItemIcon.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\ListItemSecondaryAction.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\ListItemText.d.ts" />
+    <TypeScriptCompile Include="material-ui\List\ListSubheader.d.ts" />
+    <TypeScriptCompile Include="material-ui\Menu\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Menu\Menu.d.ts" />
+    <TypeScriptCompile Include="material-ui\Menu\MenuItem.d.ts" />
+    <TypeScriptCompile Include="material-ui\Menu\MenuList.d.ts" />
+    <TypeScriptCompile Include="material-ui\MobileStepper\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\MobileStepper\MobileStepper.d.ts" />
+    <TypeScriptCompile Include="material-ui\Modal\Backdrop.d.ts" />
+    <TypeScriptCompile Include="material-ui\Modal\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Modal\Modal.d.ts" />
+    <TypeScriptCompile Include="material-ui\Paper\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Paper\Paper.d.ts" />
+    <TypeScriptCompile Include="material-ui\Popover\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Popover\Popover.d.ts" />
+    <TypeScriptCompile Include="material-ui\Progress\CircularProgress.d.ts" />
+    <TypeScriptCompile Include="material-ui\Progress\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Progress\LinearProgress.d.ts" />
+    <TypeScriptCompile Include="material-ui\Radio\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Radio\Radio.d.ts" />
+    <TypeScriptCompile Include="material-ui\Radio\RadioGroup.d.ts" />
+    <TypeScriptCompile Include="material-ui\Select\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Select\Select.d.ts" />
+    <TypeScriptCompile Include="material-ui\Select\SelectInput.d.ts" />
+    <TypeScriptCompile Include="material-ui\Snackbar\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Snackbar\Snackbar.d.ts" />
+    <TypeScriptCompile Include="material-ui\Snackbar\SnackbarContent.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\Step.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\StepButton.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\StepConnector.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\StepContent.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\StepIcon.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\StepLabel.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\Stepper.d.ts" />
+    <TypeScriptCompile Include="material-ui\Stepper\StepPositionIcon.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\colorManipulator.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\createBreakpoints.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\createGenerateClassName.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\createMixins.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\createMuiTheme.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\createPalette.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\createTypography.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\MuiThemeProvider.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\overrides.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\shadows.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\spacing.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\themeListener.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\transitions.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\withStyles.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\withTheme.d.ts" />
+    <TypeScriptCompile Include="material-ui\styles\zIndex.d.ts" />
+    <TypeScriptCompile Include="material-ui\SvgIcon\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\SvgIcon\SvgIcon.d.ts" />
+    <TypeScriptCompile Include="material-ui\Switch\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Switch\Switch.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\Table.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TableBody.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TableCell.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TableFooter.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TableHead.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TablePagination.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TableRow.d.ts" />
+    <TypeScriptCompile Include="material-ui\Table\TableSortLabel.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tabs\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tabs\Tab.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tabs\TabIndicator.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tabs\Tabs.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tabs\TabScrollButton.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\createMount.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\createRender.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\createShallow.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\getClasses.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\until.d.ts" />
+    <TypeScriptCompile Include="material-ui\test-utils\unwrap.d.ts" />
+    <TypeScriptCompile Include="material-ui\TextField\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\TextField\TextField.d.ts" />
+    <TypeScriptCompile Include="material-ui\Toolbar\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Toolbar\Toolbar.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tooltip\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Tooltip\Tooltip.d.ts" />
+    <TypeScriptCompile Include="material-ui\transitions\Collapse.d.ts" />
+    <TypeScriptCompile Include="material-ui\transitions\Fade.d.ts" />
+    <TypeScriptCompile Include="material-ui\transitions\Grow.d.ts" />
+    <TypeScriptCompile Include="material-ui\transitions\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\transitions\Slide.d.ts" />
+    <TypeScriptCompile Include="material-ui\Typography\index.d.ts" />
+    <TypeScriptCompile Include="material-ui\Typography\Typography.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\addEventListener.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\ClickAwayListener.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\helpers.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\keyboardFocus.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\manageAriaHidden.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\reactHelpers.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\requirePropFactory.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\withWidth.d.ts" />
+    <TypeScriptCompile Include="material-ui\utils\withWidth.spec.tsx" />
+    <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="mui-d.d.ts" />
+    <TypeScriptCompile Include="typescript.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54896</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54896/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
