@@ -20,4 +20,6 @@ cd ..
 
 move d:\temp\material-ui\material-ui D:\rw\pavelpz\reactx-mui-ts-export\material-ui
 
+rmdir material-ui /s /q
+
 call generate.cmd
