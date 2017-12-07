@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/react": "git+https://github.com/PavelPZ/reactx-types-react-patch.git",
+    "@types/react": "git+https://github.com/PavelPZ/reactx-types-react.git",
     "@types/react-dom": "^16.0.3",
     "dts-generator": "^2.1.0",
     "react": "^16.2.0",
